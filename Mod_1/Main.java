@@ -18,7 +18,7 @@
 
 /* Option #2: List Restaurant Name and Address Information
  *  
- * Restaurant name name: Forno 301
+ * Restaurant name: Forno 301
  * Business address: 1616 N central Ave #104, Phoenix, AZ, 85004
  * City: Phoenix
  * State: Az
