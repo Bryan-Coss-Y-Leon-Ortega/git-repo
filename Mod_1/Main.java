@@ -1,4 +1,4 @@
-package Mod_1;
+
 /*
  * Bryan Coss Y Leon Ortega
  * Module 1: Critical thinking
