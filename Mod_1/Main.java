@@ -1,12 +1,18 @@
 
-/*
- * Bryan Coss Y Leon Ortega
- * Module 1: Critical thinking
- * Option #2: List Restaurant Name and Address Information
- * CSC 320
- */
+													/* Module 1: Critical Thinking
 
-/*
+
+													* Bryan Coss Y Leon Ortega
+													* Colorado State University, Global
+													* CSC320-1
+													* Douglas Mujeye
+													* October 13, 2024
+													*/
+
+
+
+/*	Module 1: Critical thinking
+ *
  * 1. Developing pseudocode that prints the following information for a restaurant in your city:
  *		Restaurant name
  *		Business address
@@ -16,8 +22,7 @@
  *		the results and GIT repository in a single document.
  */
 
-/* Option #2: List Restaurant Name and Address Information
- *  
+/* Psuedocode:
  * Restaurant name: Forno 301
  * Business address: 1616 N central Ave #104, Phoenix, AZ, 85004
  * City: Phoenix
