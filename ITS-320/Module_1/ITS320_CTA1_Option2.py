@@ -1,35 +1,25 @@
-                                                #Create a Python Application
-
-
-                                                # Bryan Coss Y Leon Ortega
-                                                # Colorado State University, Global
-                                                # ITS-320-1
-                                                # Ray Fernandez
-                                                # October 13, 2024
-
-
-# Create a Python Application
-# This program will Read two integers and print three lines. 
-# The first line should contain integer division, //,
-# the second line should contain float division, /,
-# and the third line should contain modulo division, %.
-#You do not need to perform any rounding or formatting operations.0
-#Input Format The first line contains the first integer. The second line contains the second integer.
-#Output Format Print the three lines as described above.
-#Sample Input
+#-------------------------------------------
+# Program Name: Module 1: Critical Thinking Option #2
+# Author: Bryan Coss Y Leon Ortega 
+# Date: 10/10/2024
+#-------------------------------------------
+# Pseudocode:
+# User input 1
+# User intput 2
+# first print will be integer division
+# second print will be float division
+# third print will be modulo division
+#-------------------------------------------
+# Program Inputs: 
 # 4
 # 3
-#Sample Output
+# Program Outputs: 
 # 1
 # 1.3333333333333333
 # 1
+#-------------------------------------------
 
-# Psuedocode
-# int1 = User_input
-# int2 = User_input
-# print int1 // int2 (integer division)
-# print int1 / int2  (Float division)
-# print int1 % int2  (Modular division)
+
 
 
 int1 = int(input())
