@@ -10,14 +10,14 @@
 # 3. If S has any digits, print true, else, print False
 # 4. if S has any lowercase characters, print true, else False
 # 5. If S has any uppercase characters, print true, else False
-# 6. 
 # -----------------------------------------
 
 
 S = input("Please input a string of less than 50 characters: ")
 #print(S)
 
-
+# Here we have a loop that checks in the string if ANY char
+# fits the description of the psuedocode. True if it does, false if it does not
 has_alphanum = any(char.isalnum() for char in S)
 has_alpha = any(char.isalpha() for char in S)
 has_digit = any(char.isdigit() for char in S)
