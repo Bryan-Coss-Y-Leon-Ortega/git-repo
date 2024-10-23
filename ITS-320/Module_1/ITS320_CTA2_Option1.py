@@ -1,7 +1,7 @@
 #-------------------------------------------
 # Program Name: Module 2: Critical Thinking Option #1
 # Author: Bryan Coss Y Leon Ortega 
-# Date: 10/17/2024
+# Date: 10/23/2024
 # ------------------------------------------
 # Pseudocode:
 # Read user input String S, S > 50 characters
