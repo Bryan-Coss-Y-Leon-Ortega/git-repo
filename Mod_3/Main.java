@@ -5,12 +5,12 @@ package Mod_3;
 /* 													Module 3: Critical Thinking
 
 
-													* Bryan Coss Y Leon Ortega
-													* Colorado State University, Global
-													* CSC320-1
-													* Douglas Mujeye
-													* October 27, 2024
-													*/
+													 Bryan Coss Y Leon Ortega
+													 Colorado State University, Global
+													 CSC320-1
+													 Douglas Mujeye
+													 October 27, 2024
+*/
 
 /* Module 3 critical thinking
  * 
