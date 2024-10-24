@@ -1,8 +1,8 @@
 package Mod_3;
 
+import java.util.Scanner;
 
-
-/* 													Module 3: Critical Thinking
+/* 													 Module 3: Critical Thinking
 
 
 													 Bryan Coss Y Leon Ortega
@@ -32,7 +32,6 @@ package Mod_3;
  *  if <=2500, tax is 30%
  *  
  */
-import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
@@ -57,8 +56,8 @@ public class Main {
 			tax = weekly_income * 0.30;
 			System.out.println("Your tax on your income is " + tax);
 		}
-		
 		scan.close();
+		
 		
 	}
 }
