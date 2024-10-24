@@ -1,6 +1,8 @@
+package Mod_3;
 
 
-/* 													Module 2: Critical Thinking
+
+/* 													Module 3: Critical Thinking
 
 
 													* Bryan Coss Y Leon Ortega
