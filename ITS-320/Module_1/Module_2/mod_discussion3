@@ -1,0 +1,7 @@
+score = 84
+if (score > 70)
+print(f”{score} is a passing score for this class”)
+elif(score <= 70 and score >50)
+	print(Passing, but not by much)
+else
+print(f”{score} is a not passing score for this class”)

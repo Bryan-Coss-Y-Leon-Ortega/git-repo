@@ -30,6 +30,6 @@ print(f"Are any characters in the string digits: {has_digit}")
 print(f"Are any characters in the string lowercase: {has_lower}" )
 print(f"Are any characters in the string uppercase: {has_upper}")
 
-
+print(3 and 5)
 
 
