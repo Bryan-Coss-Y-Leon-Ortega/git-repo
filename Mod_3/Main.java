@@ -1,6 +1,7 @@
 package Mod_3;
 
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 /* 													 Module 3: Critical Thinking
 
@@ -39,29 +40,29 @@ public class Main {
 		double weekly_income = 0;
 		double tax = 0;
 		Scanner scan = new Scanner(System.in);
+		final DecimalFormat df = new DecimalFormat("0.00");
 		
-		System.out.println("What is your weekly salary, please use numbers. ");
+		System.out.print("What is your weekly salary: ");
 		weekly_income = scan.nextFloat();
 		
 		if(weekly_income < 500) {
 			tax = weekly_income * 0.10;
-			System.out.println("Your tax on your income is " + tax);
-		}if(weekly_income >= 500 && weekly_income < 1500) {
+			System.out.println("Your tax on your income is " + df.format(tax));
+		}else if(weekly_income >= 500 && weekly_income < 1500) {
 			tax = weekly_income * 0.15;
-			System.out.println("Your tax on your income is " + tax);
-		}if(weekly_income >= 1500 && weekly_income < 2500) {
+			System.out.println("Your tax on your income is " + df.format(tax));
+		}else if(weekly_income >= 1500 && weekly_income < 2500) {
 			tax = weekly_income * 0.20;
-			System.out.println("Your tax on your income is " + tax);
-		}else if(weekly_income > 2500){
+			System.out.println("Your tax on your income is " + df.format(tax));
+		}else {
 			tax = weekly_income * 0.30;
-			System.out.println("Your tax on your income is " + tax);
+			System.out.println("Your tax on your income is " + df.format(tax));
 		}
 		scan.close();
 		
 		
 	}
 }
-
 
 
 
