@@ -19,27 +19,30 @@
 # 1986-2012	$35,000,000
 # 2013-2014	$52,000,000
 #
-# Program Inputs: 1986
-# Program Outputs: 35,000,000
+# Program Inputs:                   Program outputs:
+# 1962                                  $18,500
+# 1966                                  $ 6,000
+# 1971                                  $12,000
+# 1974                                  $48,000 
 #-------------------------------------------
 
 year =  int(input('Enter year:\n'))
 
 if 1962 <= year <=1964 :
-    print('$', 18500)
+    print('$18,500')
 elif 1965 <= year <= 1968:
-    print('$', 6000)
+    print('$6,000')
 elif 1969 <= year <= 1971:
-    print('$',12000)
+    print('$12,000')
 elif 1972 <= year <= 1975:
-    print('$', 48000)
+    print('$48,000')
 elif 1976 <= year <= 1980:
-    print('$', 200000)
+    print('$200,000')
 elif 1981 <= year <= 1985:
-    print('$', 650000)
+    print('$650,000')
 elif 1986 <= year <= 2012:
-    print('$', 35000000)
+    print('$35,000,000')
 elif 2013 <= year <= 2014:
-    print('$',52000000)
+    print('$52,000,000')
 else:
     print('Not a valid year')
