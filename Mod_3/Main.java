@@ -33,6 +33,7 @@ import java.text.DecimalFormat;
  *  if <=2500, tax is 30%
  *  
  */
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -47,20 +48,18 @@ public class Main {
 		
 		if(weekly_income < 500) {
 			tax = weekly_income * 0.10;
-			System.out.println("Your tax on your income is " + df.format(tax));
+			System.out.println("The tax on your income is " + df.format(tax));
 		}else if(weekly_income >= 500 && weekly_income < 1500) {
 			tax = weekly_income * 0.15;
-			System.out.println("Your tax on your income is " + df.format(tax));
+			System.out.println("The tax on your income is " + df.format(tax));
 		}else if(weekly_income >= 1500 && weekly_income < 2500) {
 			tax = weekly_income * 0.20;
-			System.out.println("Your tax on your income is " + df.format(tax));
+			System.out.println("The tax on your income is " + df.format(tax));
 		}else {
 			tax = weekly_income * 0.30;
-			System.out.println("Your tax on your income is " + df.format(tax));
+			System.out.println("The tax on your income is " + df.format(tax));
 		}
 		scan.close();
-		
-		
 	}
 }
 
