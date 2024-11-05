@@ -1,9 +1,8 @@
 
 
-i1 = 1
-while i1 < 19:
-    i2 = 3
-    while i2 <= 9:
-        print('%d%d' % (i1,i2), end=' ')
-        i2 = i2 + 3
-    i1 = i1 + 10
+count = 0
+while count < 5:
+ print(count, " is less than 5")
+ count = count + 1
+else:
+ print (count, "is not less than 5.")
