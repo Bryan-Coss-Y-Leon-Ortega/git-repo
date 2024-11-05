@@ -21,16 +21,28 @@
 # Minimum: 72
 #-------------------------------------------
 
+'''
+This will be the total and the index for the program
+It will start at 0 and will use the information coming from the user
+
+'''
 total = 0
 i = 0
 
+'''
+We will be using a sort of Do while loop for this. This allows me to grab the maximum and minimum for later use
 
+'''
+# Do 
 grades = int(input("Please insert the grades of the five students. "))
 Max = grades
 Min = grades
 total += grades
 
-
+'''
+A while loop similar to the one above. This will add the value to the running total.
+In the loop, it will also check every value if it is either 
+'''
 while i < 4:
     grades = int(input("Please insert the grades of the five students. "))
     total += grades
@@ -42,5 +54,5 @@ while i < 4:
 
 total = total / 5
 print('Average: ', total)
-print("Maximum: ", Max)
-print("Minimum: ", Min)
+print('Maximum: ', Max)
+print('Minimum: ', Min)
