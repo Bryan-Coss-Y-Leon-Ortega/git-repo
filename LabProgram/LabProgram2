@@ -1,0 +1,59 @@
+import java.util.Scanner; 
+
+public class LabProgram {
+   public static void main(String[] args) {
+      
+      Scanner scan = new Scanner(System.in);
+      int change;
+      int coins;
+      int Dollars = 100;
+      int quarter = 25;
+      int dimes = 10;
+      int nickels = 5;
+      int pennies = 1;
+      
+      change = scan.nextInt();
+      
+      
+      if (change == 0){
+         System.out.println("No change");
+      }
+      coins = change / Dollars;
+      change = change % Dollars;
+      
+      if(coins > 1){
+         System.out.println(coins + " Dollars");
+      }else if(coins == 1){
+         System.out.println(coins + " Dollar");
+      }
+      coins = change / quarter;
+      change = change % quarter;
+      if(coins > 1){
+         System.out.println(coins + " Quarters");
+      }else if(coins == 1){
+         System.out.println(coins + " Quarter");
+      }
+      coins = change / dimes;
+      change = change % dimes;
+      if(coins > 1){
+         System.out.println(coins + " Dimes");
+      }else if(coins == 1){
+         System.out.println(coins + " Dime");
+      }
+      coins = change / nickels;
+      change = change % nickels;
+      if(coins > 1){
+         System.out.println(coins + " Nickels");
+      }else if(coins == 1){
+         System.out.println(coins + " Nickel");
+      }
+      coins = change / pennies;
+      if(coins > 1){
+         System.out.println(coins + " Pennies");
+      }else if(coins == 1){
+         System.out.println(coins + " Penny");
+      }
+      
+      
+   }
+}

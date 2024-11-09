@@ -1,0 +1,32 @@
+import java.util.Scanner; 
+
+public class LabProgram {
+   public static void main(String[] args) {
+      /* Type your code here. */
+      String firstName = "";
+      int space;
+      int space1;
+      char i;
+      Scanner scan = new Scanner(System.in);
+      
+      firstName = scan.nextLine();
+      
+      space = firstName.indexOf(" ");
+      String first = firstName.substring(0, space); 
+      
+      space1 = firstName.indexOf(" ", space + 1);
+      
+      if(space1 < 0){
+         String lastName = firstName.substring(space+1);
+         System.out.println(lastName + ", " + first);
+      }
+      else{
+       String middle = firstName.substring(space, space1);
+       String last = firstName.substring(space1 + 1);
+      System.out.println(last + ", " + first + " " + middle.charAt(1) + ".");
+      }
+      
+
+      
+   }
+}
