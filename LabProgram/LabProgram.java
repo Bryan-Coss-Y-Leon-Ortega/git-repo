@@ -69,6 +69,7 @@ public class LabProgram {
       else{
          System.out.println("Invalid");
       }
+      scnr.close();
    }
 }
 
