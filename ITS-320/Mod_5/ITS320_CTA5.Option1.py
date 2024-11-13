@@ -1,18 +1,26 @@
 #-------------------------------------------
 # Program Name: Option #1: String Values in Reverse Order
 # Author: Bryan Coss Y Leon 
-# Date:
+# Date: 11/10/2024
 #-------------------------------------------
-# Pseudocode: [See suggestions below]
+# Pseudocode: 
+# The program will prompt the user to input three different strings
+# These strings will then be sent into a function string_Reversed
+# In string_Reversed, the 3 strings the user inputted will be reversed order and concatenated together in the return
+# The string returned will be the 3 strings reversed in 3-2-1 order
+
 #-------------------------------------------
-# Program Inputs: [See suggestions below]
-# Program Outputs: [See suggestions below]
+# Program Inputs: 
+# Please input a string: I love you
+# Please input a string: to the moon
+# Please input a string: and back
+
+# Program Outputs: 
+# kcab dna noom eht ot  uoy evol I
 #-------------------------------------------
 
 
 def string_Reverse(str1, str2, str3):
-
-    
 
     return str3[::-1]+ " " + str2[::-1]+ " " + str1[::-1]
 
