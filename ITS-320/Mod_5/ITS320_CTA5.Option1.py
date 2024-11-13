@@ -16,7 +16,7 @@
 # Please input a string: and back
 
 # Program Outputs: 
-# kcab dna noom eht ot  uoy evol I
+# kcab dna noom eht ot uoy evol I
 #-------------------------------------------
 
 # This function will take three strings
@@ -25,6 +25,7 @@ def string_Reverse(str1, str2, str3):
 
  return str3[::-1]+ " " + str2[::-1]+ " " + str1[::-1]
 
+T
 print("This program will intake 3 strings and return it in a concatenated reversed order. \n")
 String1 = input("Please input a string: ")
 String2 = input("Please input a string: ")
