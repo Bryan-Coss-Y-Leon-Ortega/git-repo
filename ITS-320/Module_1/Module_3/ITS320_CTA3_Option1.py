@@ -9,6 +9,17 @@
 # We will look into the table and return the dollar value 
 # 
 #-------------------------------------------
+
+#
+# Program Inputs:                   Program outputs:
+# 1962                                  $18,500
+# 1966                                  $ 6,000
+# 1971                                  $12,000
+# 1974                                  $48,000 
+# =================================================
+#
+# ==  Key  == 
+#
 # Year      Value
 # 1962-1964	$18,500
 # 1965-1968	$6,000
@@ -18,16 +29,13 @@
 # 1981-1985	$650,000
 # 1986-2012	$35,000,000
 # 2013-2014	$52,000,000
-#
-# Program Inputs:                   Program outputs:
-# 1962                                  $18,500
-# 1966                                  $ 6,000
-# 1971                                  $12,000
-# 1974                                  $48,000 
 #-------------------------------------------
-
+# We need the users input for the car year
 year =  int(input('Enter year:\n'))
 
+# The year will be compared to the years of the key above.
+# The value will compare to each if statement until it finds the appropriate year and will print the value. 
+# if the year is not within the key, then the program will throw an else statement. 
 if 1962 <= year <=1964 :
     print('$18,500')
 elif 1965 <= year <= 1968:
