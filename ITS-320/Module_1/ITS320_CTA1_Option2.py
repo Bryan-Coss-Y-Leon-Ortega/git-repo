@@ -22,9 +22,15 @@
 
 
 
-int1 = int(input())
-int2 = int(input())
+int1 = int(input("Please input the first number: "))
+int2 = int(input("Please input the second number: "))
 
-print(int1 // int2 )
-print(int1 / int2 )
-print(int1 % int2 )
+print("Integer division: " + str(int1 // int2 ))
+print("Float division: " + str(int1 / int2 ))
+print("Modulo dvision: " + str(int1 % int2 ))
+
+
+
+
+
+
