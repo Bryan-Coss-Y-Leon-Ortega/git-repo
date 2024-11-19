@@ -28,22 +28,32 @@ class Complex(object):
     #                               (c + di)   (c2 + d2)  +  (c2 + d2)
     def __truediv__(self, no):
         denom = no.real**2 + no.imaginary**2
-        return Complex((self.real * no.real  - self.imaginary * no.imaginary) / denom, (self.real * no.imaginary + self.imaginary * no.real) / denom)
+        return Complex((self.real * no.real  + self.imaginary * no.imaginary) / denom, (self.real * no.imaginary - self.imaginary * no.real) / denom)
 
     # This will be the modulus of complex number
     # (a + bi) -> sqrt(a2 + b2)
     def mod(self):
         # enter your code here
-        return Complex(math.sqrt(self.real**2 + self.imaginary**2))
+        results  = math.sqrt(self.real**2 + self.imaginary**2)
+        return (Complex(results, 0))
 
     # This will return the complex number in correct order
     def __str__(self):
         # enter your code here
-        return f"{self.real} + {self.imaginary}j"
+        #if (self.imaginary == 0):
+           # self.imaginary = 0
+        return f"{self.real:.2f} + {self.imaginary:.2f}j"
 
 # put this code in a main method
-num1 = Complex(2, 1)
-num2 = Complex(5, 6)
+
+# num1 = Complex(2, 1)
+# num2 = Complex(5, 6)
+# print("Addition:", num1 + num2)
+# print("Subtraction:", num1 - num2)
+# print("Multiplication:", num1 * num2)
+# print("Division:", num1 / num2)
+# print("Modulus: ", num1.mod())
+# print("Modulus: ", num2.mod())
 
 C = map(float, input().split())
 D = map(float, input().split())
