@@ -1,3 +1,27 @@
+#-------------------------------------------
+# Program Name: Option #1: Working with Python Classes
+# Author: Bryan Coss Y Leon 
+# Date: 11/17/2024
+#-------------------------------------------
+# Pseudocode: 
+# The program will prompt the user to input 2 different complex numbers
+# The 2 complex numbers will go through a few mathematical operations
+# Addition, subtraction, multiplication, division, and modulus
+# These answers will be print in a + bi format at 2 decimal places.
+# 
+#-------------------------------------------
+# Program Inputs: 
+# 2 1
+# 5 6
+
+# Program Outputs: 
+# 7.00 + 7.00i
+# -3.00 - 5.00i
+# 4.00 + 17.00i
+# 0.26 - 0.11i
+# 2.24 + 0.00i
+# 7.81 + 0.00i
+#-------------------------------------------
 import math
 
 class Complex(object):
@@ -39,21 +63,18 @@ class Complex(object):
 
     # This will return the complex number in correct order
     def __str__(self):
-        # enter your code here
-        #if (self.imaginary == 0):
-           # self.imaginary = 0
         return f"{self.real:.2f} + {self.imaginary:.2f}j"
 
 # put this code in a main method
-
-# num1 = Complex(2, 1)
-# num2 = Complex(5, 6)
-# print("Addition:", num1 + num2)
-# print("Subtraction:", num1 - num2)
-# print("Multiplication:", num1 * num2)
-# print("Division:", num1 / num2)
-# print("Modulus: ", num1.mod())
-# print("Modulus: ", num2.mod())
+# Testing
+# test1 = Complex(2, 1)
+# test2 = Complex(5, 6)
+# print("Addition:", test1 + test2)
+# print("Subtraction:", test1 - test2)
+# print("Multiplication:", test1 * test2)
+# print("Division:", test1 / test2)
+# print("Modulus: ", test1.mod())
+# print("Modulus: ", test2.mod())
 
 C = map(float, input().split())
 D = map(float, input().split())
