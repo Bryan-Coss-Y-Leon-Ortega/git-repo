@@ -1,11 +1,11 @@
 def square(x):
 
-    
     return print("The area of the square is = " + str(x * x))
 
 def rectangle(x, y):
     
     return print("The area of the rectangle is = " + str(x * y))
+
 
 print("Hello, we are learning the difference between squares and rectangles")
 print("The area of a rectangle is defined as A = W * L")
