@@ -48,7 +48,7 @@ class Complex(object):
         return Complex((self.real * no.real  - self.imaginary * no.imaginary), (self.real * no.imaginary + self.imaginary * no.real))
 
     #This will be dividing complex numbers
-    # To divide complex numbers =   (a + bi) = (ac + bd)  +  (bc-ad)
+    # To divide complex numbers =   (a + bi) = (ac + bd)  +  (bc - ad)
     #                               (c + di)   (c2 + d2)  +  (c2 + d2)
     def __truediv__(self, no):
         denom = no.real**2 + no.imaginary**2
