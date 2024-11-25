@@ -1,0 +1,7 @@
+For Mod 4 assignment, I have changed the assignment to reflect learning loops. 
+This assignments will have 2 loops instead of a psuedo do while loop. 
+I have also improved the text comments to better describe what each part of the program is doing. 
+
+Mod 5 was not altered.
+
+Mod 6 was given an input prompt. This will help the user know what they are supposed to input.

@@ -4,15 +4,7 @@
 # Date: 11/4/24
 #-------------------------------------------
 # Pseudocode: 
-# The user will input 5 different sets of grades
-# These grades will be floating point values 
-# I will perform three different operations with these numbers:
-# First I will find the average
-#   Because I will need 5 values, i will have a running total and then divide by 5.
-# Then i will find the minimum value
-#   For this, i will assign the first value to minimum and compare the rest of the inputs. if there is a smaller values, it will become the new minimum
-# and the Maximum value
-#   For this, i will assign the first value to maximum and compare the rest of the inputs. if there is a smaller values, it will become the new maximum
+# I will use a for loop for user input. I will  
 #-------------------------------------------
 # Program Inputs: 75 80 87 72 74
 # Program Outputs: 
@@ -49,6 +41,8 @@ for j in range(5):
 
 #test
 #print(grades)
+
+# Here are the prints, Average, Max, and Min to 2 decimal points since it is a floating number.
 print(f"Total grade average is: {total / 5:.2f}")
 print(f'Maximum grade: {Max:.2f}')
 print(f'Minimum grade: {Min:.2f}')
