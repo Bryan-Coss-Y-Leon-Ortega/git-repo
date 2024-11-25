@@ -1,4 +1,6 @@
-package Mod_4;
+package Mod_8;
+
+
 
 /*
  * Option #1: Looping Construct with Floating Point Numbers
@@ -43,7 +45,6 @@ public class Main {
 
 		double total = 0.0;
 		double average;
-		double [] arrVals = new double[5];
 		double Maximum = Double.MIN_VALUE;
 		double Minimum = Double.MAX_VALUE;
 		double Interest = 0.20;
@@ -51,30 +52,19 @@ public class Main {
 		int count = 0;
 		Scanner scan = new Scanner(System.in);
 
-
-		//This Do-While loop will prompt user for all the floats to input to the array
 		do {
 			System.out.print("Please insert a number: ");
 			number = scan.nextDouble();
-			arrVals[count] = number;
-			count++;
+			if (number > Maximum) {
+				Maximum = number;
+			}
+			if (number < Minimum) {
+				Minimum = number;
+			}
+			total = total + number;
+			count = count + 1;
 		} while (count < 5);
-
-
-		//This loop will go through the array and find: Min, Max, and total.
-		//The total will be used to find average
-		for(int i = 0; i < arrVals.length; i++){
-
-			total = arrVals[i] + total;
-
-			if(Maximum < arrVals[i]){
-				Maximum = arrVals[i];
-			}
-			if(Minimum > arrVals[i]){
-				Minimum = arrVals[i];
-			}
-
-		}
+		
 		average = total / 5;
 
 		System.out.println("Maximum number: " + Maximum);
