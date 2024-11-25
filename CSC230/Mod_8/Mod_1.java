@@ -1,3 +1,5 @@
+package Mod_8;
+
 
 													/* Module 1: Critical Thinking
 
@@ -34,7 +36,7 @@
  *  print city +, + state +, + zip
  */
 
-public class Main{
+public class Mod_1{
 	
 	public static void main (String[] args) {
 		

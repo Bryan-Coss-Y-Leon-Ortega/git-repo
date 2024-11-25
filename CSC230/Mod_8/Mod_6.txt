@@ -1,0 +1,118 @@
+Module 6: Portfolio Milestone Assignment
+
+
+Bryan Coss Y Leon Ortega
+Colorado State University, Global
+CSC320-1
+Douglas Mujeye
+November 17, 2024
+
+
+
+
+
+Portfolio Milestone Assignment
+public class Main {
+    /*
+     * This project will be an auto garage where we show cars in stock
+     * and what they are selling for
+     * 
+     * 
+     * */
+    
+    /*
+     * automobile class {
+     * String autoMake
+     * String autoModel
+     * int year
+     * int price
+     * 
+     * 
+     * constructor to initialize a new auto in the garage stock
+     * 
+     * method automobile(String autoMake, String Automodel, int year, int price){
+     * this.autoMake = autoMake;
+     * this.autoModel = autoModel;
+     * this.year = year;
+     * this.price = price;
+     * 
+     * }
+     * 
+     * 
+     * Classes to manage garage of automobiles
+     * 
+     * This method will be need if a vehicle needs their price updated
+     *  public void setPrice(double price){
+     *      this.price = price;
+     * }
+     * This method will add
+     * method String addCar(ArrayList garage, String autoMake, String Automodel, int year,   double price)
+     *      This method will take the garage arraylist and the scanner. 
+     *      The user will input the information and be added to the arraylist
+     *      Automobile newCar = new Automobile(make, mode, year price)
+     *  
+     *      garage.add(newCar);
+     *      return Make + model successfully added
+     *  
+     * method String sellCar()
+     * 
+     *      if values enter matches the stored value
+     *          vehicle is removed form garage
+     *          return successfully sold car
+     *      else
+     *          return error messages
+     *      
+     * 
+     * method showInventory(ArrayList garage)
+     *      
+     *      a for loop will go through garage and print every item 
+     *
+     * 
+     * method String updatePrice(ArrayList garage, int price)
+     *      This method will change the price of a car
+     *      if(make && model && year)
+     *      car.setPrice(price)
+     *      return price successfully changed
+     * 
+     *      else
+     *      return error message
+     * 
+     * */
+    public static void main(String[] args) {
+        /* 
+         * 
+         * ArrayList<Automobile> garage = new ArrayList<Automobile>();
+         * String autoName;
+         * String autoModel;
+         * int autoYear;
+         * int price;
+         * int newPrice;
+         * 
+         * Scanner scan = new Scanner(System.in);
+         * 
+         * */
+        
+        /*
+         * We will be doing a do while loop to get the inputs from all the 
+         * 
+         * do{
+         * 
+         * This is the garage, please choose an option from the following
+         * 
+         * add car
+         * 
+         * 
+         * sell car
+         * 
+         * show garage
+         * 
+         * update price
+         * 
+         * quit
+         * while(not quit)
+         * 
+         * */
+    }
+}
+
+

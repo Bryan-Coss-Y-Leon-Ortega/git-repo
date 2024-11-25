@@ -1,4 +1,4 @@
-package Mod_3;
+package Mod_8;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -34,7 +34,7 @@ import java.text.DecimalFormat;
  *  
  */
 
-public class Main {
+public class Mod_3 {
 
 	public static void main(String[] args) {
 		
