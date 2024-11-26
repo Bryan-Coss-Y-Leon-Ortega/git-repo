@@ -51,6 +51,7 @@ public class Mod_4 {
 		Scanner scan = new Scanner(System.in);
 
 		//This will prompt the user to input numbers into the array
+		System.out.println("Please insert five numbers followed by a new line.");
 		for(int i = 0; i < arrNums.length; i++){
 			arrNums[i] = scan.nextInt();
 		}
