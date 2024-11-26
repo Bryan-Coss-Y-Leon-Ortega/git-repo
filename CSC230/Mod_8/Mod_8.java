@@ -1,5 +1,10 @@
 package Mod_8;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Mod_8 {
@@ -74,12 +79,14 @@ public class Mod_8 {
             this.mileage = mileage;
         }
         
+        //This is an override to print the array in a specific format.
         @Override
         public String toString(){
             return "Make: " + make + ", Model: " + model + ", Color: " + color + ", Year: " + year + ", Mileage: " + mileage; 
     }
 
     }
+    //Prints everything in the dealership array
     private static void printDealership(Automobile[] dealership) {
 
         for(int i = 0; i < dealership.length; i++){
@@ -87,6 +94,10 @@ public class Mod_8 {
         }
         
     }
+    // This method adds a car into the inventory
+    // This is done by creating a new automobile array length +1
+    // Adding everything in the original garage and then adding the new one in the back
+    // TODO: Need to add error checkings, (TYPE)
     private static Automobile[] addCar(Automobile[] dealership2, Scanner scan) {
         String tempMake = "";
         String tempModel = "";
@@ -128,6 +139,10 @@ public class Mod_8 {
     }
 
     //This will use the car information to seek out the car that needs to be deleted
+    // This uses the for loop that looks like python
+    // This finds the specific car and deletes it
+    // Returns an error if there is no car matching the description
+    // TODO Add error catching 
     private static Automobile[] deleteCar(Automobile[] dealership, Scanner scan) {
         String tempMake = "";
         String tempModel = "";
@@ -187,6 +202,9 @@ public class Mod_8 {
         System.out.println("Car removed");
         return tempDeal;
     }   
+    // ChangeStat is a program that lets the user find a specific car and change the attributes.
+    // This method will find the car and allow you to change items until you quit
+    //TODO: Needs catch methods and error checking
     private static Automobile[] changeStat(Automobile[] dealership, Scanner scan) {
         String tempMake = "";
         String tempModel = "";
@@ -270,12 +288,47 @@ public class Mod_8 {
         return dealership;
     }
 
+    // This program will print to a file called Garage.txt
+    // this has 2 parts, the file is created and file is written in.
+    // TODO: See if you can make this overwrite the file.
+    private static void printToFile(Automobile[] dealership) {
+
+        //This will create a file garage
+        try{
+            File myFile = new File("Garage.txt");
+            if (myFile.createNewFile()){
+                System.out.println("File created: " + myFile.getName());
+            } else {
+                System.out.println("File already exists.");
+            }
+        } catch(IOException e){
+            System.out.println("An error occured");
+            e.printStackTrace();
+        }
+
+        //this will write into the file garage
+        try{
+            FileWriter myWriter = new FileWriter("Garage.txt");
+            for(Automobile car : dealership){
+                if (car != null){
+                    myWriter.write(car.toString() + "\n");
+                }
+            }
+            myWriter.close();
+            System.out.println("I think we did it chief");
+        } catch(IOException e){
+            System.out.println("An error has occured");
+            e.printStackTrace();
+        }
+    }
+
         
     public static void main(String[] args){
 
         Scanner scan = new Scanner(System.in);
-        //String x = "";
+        
         Automobile[] dealership = new Automobile[5];
+        Automobile[] finalGarage = new Automobile[0];
         //Automobile[] dealership2 = new Automobile[0];
         //Automobile carZ = new Automobile();
 
@@ -294,6 +347,16 @@ public class Mod_8 {
 
         dealership[2].setColor("Black");
 
+        finalGarage = addCar(finalGarage, scan);
+        printDealership(finalGarage);
+
+        //TODO
+
+        /*
+         * 
+         * 
+         */
+
         //printDealership(dealership);
 
         //dealership2 = addCar(dealership2, scan);
@@ -305,13 +368,11 @@ public class Mod_8 {
         //printDealership(dealership);
         //dealership = deleteCar(dealership, scan);
         //printDealership(dealership);
-        dealership = changeStat(dealership, scan);
-        printDealership(dealership);
-        
-                
-                scan.close();               
-                }
+        //dealership = changeStat(dealership, scan);
+        //printDealership(dealership);
+        //printToFile(dealership);            
+        scan.close();               
+            }
             
-            
-         
+     
 }
