@@ -42,30 +42,30 @@ public class Mod_4 {
 
 	public static void main(String[] args) {
 
-
+		double[] arrNums = new double[5];
 		double total = 0.0;
 		double average;
 		double Maximum = Double.MIN_VALUE;
 		double Minimum = Double.MAX_VALUE;
 		double Interest = 0.20;
-		double number;
-		int count = 0;
 		Scanner scan = new Scanner(System.in);
 
-		do {
-			System.out.print("Please insert a number: ");
-			number = scan.nextDouble();
-			if (number > Maximum) {
-				Maximum = number;
-			}
-			if (number < Minimum) {
-				Minimum = number;
-			}
-			total = total + number;
-			count = count + 1;
-		} while (count < 5);
+		//This will prompt the user to input numbers into the array
+		for(int i = 0; i < arrNums.length; i++){
+			arrNums[i] = scan.nextInt();
+		}
 		
-		average = total / 5;
+		for(int j = 0; j < arrNums.length; j++){
+			total = total + arrNums[j];
+			if(Maximum < arrNums[j]){
+				Maximum = arrNums[j];
+			}
+			if(Minimum > arrNums[j]){
+				Minimum = arrNums[j];
+			}
+		}
+		average = total / 5.0;
+
 
 		System.out.println("Maximum number: " + Maximum);
 		System.out.println("Minimum number: " + Minimum);
