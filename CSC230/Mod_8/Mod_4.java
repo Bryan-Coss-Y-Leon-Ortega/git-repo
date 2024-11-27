@@ -67,15 +67,13 @@ public class Mod_4 {
 		}
 		average = total / 5.0;
 
-
 		System.out.println("Maximum number: " + Maximum);
 		System.out.println("Minimum number: " + Minimum);
 		System.out.println("Total: " + total);
 		System.out.println("Average: " + average);
 		System.out.println("Total with 20% interest: " + (total + (total * Interest)));
-		
-		scan.close();
 
+		scan.close();
 	}
 
 }
