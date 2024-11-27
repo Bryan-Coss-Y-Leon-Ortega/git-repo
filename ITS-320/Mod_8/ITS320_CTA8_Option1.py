@@ -1,8 +1,6 @@
 import os
 
-
 class Automobile:
-
 
     def __init__(self, make, model, color, year, mileage):
         self.make = make
@@ -72,6 +70,7 @@ def updateVehicle(garage):
         choiceVar = int(input())
 
         while(validInput == False):
+         try:
             if choiceVar == 1:
                 garage[choiceCar].setMake(input("What is the updated Make: "))
                 validInput = True
@@ -89,11 +88,13 @@ def updateVehicle(garage):
                 validInput = True
 
             elif choiceVar == 5:
-                garage[choiceCar].setModel(input("What is the updated Model: "))
+                garage[choiceCar].setMileage(input("What is the updated Mileage: "))
                 validInput = True
             else:
                 print("Not a valid choice, please try again")
                 validInput = False
+         except ValueError:
+            print("Invallid input. Please enter only numbers for years and mileage")
 
         print(f"Successfully updated {garage[choiceCar]}")
 
@@ -138,8 +139,14 @@ def removeVehicle(garage):
         car = garage.pop(choice)
         print(f"Removed vehicle: {car}" )
 
-def addVehicle(garage):
+# This method will need a garage input and add a car to the garage.
+# it has a check to make sure the year and mileage are numbers.
+# This will return a success when added
 
+def addVehicle(garage):
+    validInput = False
+    while(validInput == False):
+     try:
         make = input("What is the make: ")
         model = input("What is the model: ")
         color = input("What is the color: ")
@@ -148,7 +155,11 @@ def addVehicle(garage):
         
         cars2 = (Automobile(make, model, color, year, mileage))
         print(f"Successfully added: {cars2}")
+        validInput = True
         garage.append(cars2)      
+     except ValueError:
+        print("Invalid input: Please enter only numbers for years and mileage")
+
 
 garage = []
 validInput = False
@@ -160,7 +171,8 @@ print("Here are your options")
 
 
 while(validInput == False):
-    choice = int(input(("1. Add Vehicle\n2. Remove vehicle\n3. Update car attribute\n4. Print content\n5. Print to file\n6. To quit\n")))
+ try:
+    choice = int(input(("1. Add Vehicle\n2. Remove vehicle\n3. Update car attribute\n4. Print content\n5. To quit\n")))
     if choice == 1:
         addVehicle(garage)
     
@@ -174,11 +186,11 @@ while(validInput == False):
         printGarage(garage)
 
     elif choice == 5:
-        printToFile(garage)
-
-    elif choice == 6:
         validInput = True
     
     else:  
         print("Not a valid choice, please enter 1 - 6")
+ except ValueError:
+     print("Invalid inputs, Please only use numbers")
 
+printToFile(garage)
