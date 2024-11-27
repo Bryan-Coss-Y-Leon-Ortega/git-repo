@@ -75,7 +75,7 @@ class Complex(object):
 # print("Division:", test1 / test2)
 # print("Modulus: ", test1.mod())
 # print("Modulus: ", test2.mod())
-print("Please enter two complex equations in the format A B followed by a new line, this will represent A + Bi ")
+print("Please enter two complex equations in the format A B followed by a new line and C D, this will represent A + Bi ")
 C = map(float, input().split())
 D = map(float, input().split())
 x = Complex(*C)
