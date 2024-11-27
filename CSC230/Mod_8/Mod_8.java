@@ -175,7 +175,7 @@ public class Mod_8 {
     // This uses the for loop that looks like python
     // This finds the specific car and deletes it
     // Returns an error if there is no car matching the description
-    // TODO Add error catching
+    
     private static Automobile[] deleteCar(Automobile[] dealership, Scanner scan) {
    
         Boolean carFound = false;
