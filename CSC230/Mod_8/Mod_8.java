@@ -80,8 +80,7 @@ public class Mod_8 {
         // This is an override to print the array in a specific format.
         @Override
         public String toString() {
-            return "Make: " + make + ", Model: " + model + ", Color: " + color + ", Year: " + year + ", Mileage: "
-                    + mileage;
+            return make + " " + model + " " + color + " " + year + " " + mileage;
         }
 
     }
