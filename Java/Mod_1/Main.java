@@ -59,7 +59,7 @@ public class Main {
 		Gael.displayAccount();
 		
 		/*
-		 * This try catch will catch form negative interest rates
+		 * This try catch will catch form negative interest rates  
 		 */
 		try{
 			CheckingAccount Mateo = new CheckingAccount("Liam","Vazquez", 4937, 1250.00, -0.0012);
