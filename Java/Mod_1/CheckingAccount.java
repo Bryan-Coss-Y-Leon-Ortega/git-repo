@@ -1,3 +1,5 @@
+package Java.Mod_1;
+
 import java.text.DecimalFormat;
 
 public class CheckingAccount extends BankAccount {
