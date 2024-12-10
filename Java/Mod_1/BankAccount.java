@@ -82,7 +82,7 @@ package Java.Mod_1;
 		System.out.println("Bank of Bryan account profile: " );
 		System.out.println("Name: " + firstName + " " + lastName);
 		System.out.println("Account ID: "+ accountID);
-		System.out.println("Balance: " + balance);
+		System.out.println("Balance: $" + balance);
 	}
 	
 }
