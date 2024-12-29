@@ -41,10 +41,4 @@ public class BankClients {
 	public String getName() {
 		return this.name;
 	}
-	
-	
-	
-	
-	
-
 }
