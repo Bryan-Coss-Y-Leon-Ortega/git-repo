@@ -52,7 +52,6 @@ public class loginAccount extends JFrame {
 		gbc.insets = new Insets(10,10,10,10);
 		add(depoText, gbc);
 		
-			
 		//withdrawal
 		JLabel withdraw = new JLabel("Withdraw");
 		gbc = new GridBagConstraints();
@@ -98,10 +97,8 @@ public class loginAccount extends JFrame {
 					currTotal.setText("Current total: " + String.format("%.2f",authClient.balance));
 
 				}
-				
 			}
 		});
-		
 	}
 	//This method will make sure the deposited number is an integer
 	protected boolean isNumeric(String num) {
@@ -113,10 +110,9 @@ public class loginAccount extends JFrame {
 			System.out.println("Exception:" + e);
 			return false;
 		}
-		
 	}
+
 	//This method will make sure it is not an empty string
-	
 	public static boolean isEmpty(String str) {
 		
 		if(str.length() > 0) {
@@ -126,9 +122,4 @@ public class loginAccount extends JFrame {
 			return false;
 		}
 	}
-
-	
-	
-	
-
 }

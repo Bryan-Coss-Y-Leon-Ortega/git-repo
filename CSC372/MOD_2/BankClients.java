@@ -7,23 +7,20 @@ public class BankClients {
 	public String password;
 	public double balance;
 	
-	
+	// This is the blank constructor
 	BankClients(){
-		String user = "NONE";
-		String password = "NONE";
-		double checking = 0.0;
-		double savings = 0.0;
-		String name = "Not a user";
-		
+		this.name = "Not a user";
+		this.password = "NONE";
+		this.userID = "NONE";
+		this.balance = 0.0;	
 	}
 	
+	//This is the constructor
 	BankClients(String name, String userID, String password, double balance){
 		this.name = name;
 		this.userID = userID;
 		this.password = password;
 		this.balance = balance;
-		
-		
 	}
 	//This will be the deposits where customer can deposit into either savings or checkings
 	public void depositCheckings(double deposit) {

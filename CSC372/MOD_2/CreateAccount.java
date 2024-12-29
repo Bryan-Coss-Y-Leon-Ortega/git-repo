@@ -16,14 +16,11 @@ public class CreateAccount extends JFrame{
 	
 	public CreateAccount(ArrayList<BankClients> clientList) {
         
-        
 		setTitle("Login Screen");
 		setSize(500,300);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setLayout(new GridBagLayout());
 		//GridBagConstraints gbc = new GridBagConstraints();
-		
-		
 		
 		// The label for name
 		JLabel nameLabel = new JLabel("Enter Name:");
@@ -32,6 +29,7 @@ public class CreateAccount extends JFrame{
 		gbc.gridy = 1;
 		gbc.insets = new Insets(10,10,10,10);
 		add(nameLabel, gbc);
+
 		// Text box for the name
 		JTextField nameText = new JTextField(15);
 		gbc = new GridBagConstraints();
@@ -132,14 +130,10 @@ public class CreateAccount extends JFrame{
         			passText.setText("");
         			acctCheckNum.setText("");
         		}
-        		
-        		
         	}
-
         });
-		
+
 		setVisible(true);
-		
 	}
 
 	//This method will make sure the deposited number is an integer
@@ -152,10 +146,8 @@ public class CreateAccount extends JFrame{
 			System.out.println("Exception:" + e);
 			return false;
 		}
-		
 	}
 	//This method will make sure it is not an empty string
-	
 	public static boolean isEmpty(String str) {
 		
 		if(str.length() > 0) {
@@ -165,5 +157,4 @@ public class CreateAccount extends JFrame{
 			return false;
 		}
 	}
-	
 }

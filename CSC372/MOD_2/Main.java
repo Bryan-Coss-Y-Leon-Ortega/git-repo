@@ -24,10 +24,8 @@ public class Main {
          * This will have the title, size, set visible and close
          */
         JFrame bankFrame = new JFrame();
-        
         bankFrame.setTitle("Bank of Bryan");
         bankFrame.setSize(800,700);
-        
         
         /*
          * The clients will be held in an array list
@@ -48,6 +46,7 @@ public class Main {
          * Results of login:
          * 
          * */
+
         JPanel panel = new JPanel(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         //gbc.insets = new Insets(10, 10, 10, 10); // Padding between components
@@ -99,8 +98,6 @@ public class Main {
         gbc.gridy = 5;
         panel.add(createAcct, gbc);
         
-        
-        
         //this will be the action for the login
         button.addActionListener(new ActionListener() {
         	@Override
@@ -122,7 +119,6 @@ public class Main {
         	}
         });
 
-        
         //This will be the button to create a new client in the Bryan Bank inventory
         createAcct.addActionListener(new ActionListener() {
         	@Override
@@ -131,8 +127,6 @@ public class Main {
 
         	}
         });
-        
-        
         
         // Frame stuff, needed
         bankFrame.add(panel);
@@ -153,11 +147,7 @@ public class Main {
     	clientList.add(Alexis);
     	clientList.add(Oscar);
     	clientList.add(Bere);
-    	clientList.add(Eman);
-    	
-    	//TODO: user name and password check
-    	//must be able to grab the newly created on as well.
-    	
+    	clientList.add(Eman);  	
 
     }
     
@@ -169,8 +159,5 @@ public class Main {
 			}
 		}
 		return null;
-		
 	}
-       
-
 }
