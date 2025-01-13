@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ShapeArray",
+            "request": "launch",
+            "mainClass": "Mod_4.ShapeArray",
+            "projectName": "git-repo_4bc425"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
