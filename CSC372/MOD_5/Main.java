@@ -36,13 +36,16 @@ public class Main{
         }
     }
     public static void main(String[] args){
-        int INPUTS = 5;
-        double product = 1;
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter 5 numbers. The numbers can be integer or have decimals, and can be seperated by a space or new line. ");
+
+        int INPUTS = 5;                         //Amount of times a user can input
+        double product = 1;                     //Making a running product table, 1 because anything * 0 is 0
+        Scanner scan = new Scanner(System.in);  //Scanner to input into the productFive method. 
+
+        //Message for the user. 
+        System.out.println("Please enter 5 numbers. The numbers can be integer or mixed numbers, and can be seperated by a space or new line. ");
 
         //Since the return is a double, the easiest way to return 
-        System.out.println(productFive(scan, INPUTS, product));
+        System.out.println("The product is: " + productFive(scan, INPUTS, product));
 
         //Close the scanner
         scan.close();
