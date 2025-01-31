@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "CSC372.MOD_7_Ex.Main",
+            "projectName": "git-repo_4bc425"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "CSC372.MOD_5.Main",
             "projectName": "git-repo_4bc425"
         },
