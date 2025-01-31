@@ -7,11 +7,36 @@ public class Car {
     private double mpg;
     public Car(){
 
+        this.make = "Empty car";
+        this.model = "No model";
+        this.mpg = 0.00;
     }
     public Car(String make, String model, double mpg){
         this.make = make;
         this.model = model;
         this.mpg = mpg;
 
+    }
+
+    public String getMake() {
+        return make;
+    }
+    public String getModel() {
+        return model;
+    }public double getMpg() {
+        return mpg;
+    }public void setMake(String make) {
+        this.make = make;
+    }public void setModel(String model) {
+        this.model = model;
+    }public void setMpg(double mpg) {
+        if(mpg < 0.00){
+            System.out.println("Cannot be negative, try again. ");
+        }
+        this.mpg = mpg;
+    }
+    @Override
+    public String toString(){
+        return this.make + " " + this.model + " " + this.mpg + "\n";
     }
 }
