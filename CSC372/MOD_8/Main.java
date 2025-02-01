@@ -13,9 +13,9 @@ public class Main extends Algorithm{
         Car Mazda = new Car("Mazda", "Sport", 20.2);
         Car Ford = new Car("Ford", "F-150", 15.2);
 
-        garage.add(chevy);
-        garage.add(Mazda);
-        garage.add(Ford);
+       // garage.add(chevy);
+       // garage.add(Mazda);
+        //garage.add(Ford);
 
         numSort(garage);
         System.out.println(garage.toString());
@@ -31,6 +31,7 @@ public class Main extends Algorithm{
         fileInput = new FileInputStream("C:\\Users\\bryan\\git-repo\\CSC372\\MOD_8\\CarList.txt");
         scan = new Scanner(fileInput);
 
+        /*
         make = scan.next();
         model = scan.next();
         mpg = scan.nextDouble();
@@ -42,13 +43,23 @@ public class Main extends Algorithm{
         Car newCar = new Car(make, model, mpg);
         garage.add(newCar);
         System.out.println(garage.toString());
+        */
 
+        /*
+         * Be able to write into a file
+         * written file must be able to save information
+         * 
 
-        fileInput.close();
-        scan.close();
+          * Here we will read the CarList.txt
+          */
 
+        readText(garage, fileInput);
+        writeGarage(garage, fileInput);
 
-
-
-    }
+        System.out.println(garage.toString());
+                  fileInput.close();
+                  scan.close();
+              }
+          
+              
 }
