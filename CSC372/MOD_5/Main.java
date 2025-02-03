@@ -24,10 +24,14 @@ public class Main{
         if (INPUTS ==0){
             return product;
         }else{
+            // In this part, we are grabbing the scan fucntion, 
+            // reading through the inputs
+            // and multiplying the next input to the running product. 
             try{
                 double x = scan.nextDouble();
                 return productFive(scan, INPUTS -1, product * x);
             }
+            // this catch will make sure there is only integers
             catch (Exception excpt){
                 System.out.println(excpt.getMessage());
                 System.out.println("Cannot compute, please only use integers");
