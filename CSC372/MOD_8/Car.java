@@ -18,6 +18,10 @@ public class Car {
 
     }
 
+    /*
+     * These are created if they are needed, so far, they have not been needed for anything
+     * 
+     */
     public String getMake() {
         return make;
     }
@@ -35,6 +39,9 @@ public class Car {
         }
         this.mpg = mpg;
     }
+    /*
+     * This will be the format on how present the cars in the list.  
+    */
     @Override
     public String toString(){
         return this.make + " " + this.model + " " + this.mpg + "\n";

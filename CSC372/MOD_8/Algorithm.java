@@ -55,10 +55,12 @@ public class Algorithm extends Car {
                     System.out.println("Skipped line not in proper Make Model MPG format" + line);
                 }
 
+                // The words array will be split abd properly formatted. Make and model with take words[0] & words[1]
                 String make = words[0];
                 String model = words[1];  
                 double mpg;
 
+                // MPG will be check to to ensure it is a double. If it is, it will be accepted as a car and inserted to the garage linkedlist and text file. 
                 try{
                     mpg = Double.parseDouble(words[2]);
                     if(mpg > 0){
@@ -88,7 +90,7 @@ public class Algorithm extends Car {
         Scanner scan = new Scanner(System.in);
 
         try (BufferedWriter output = new BufferedWriter(new FileWriter(file, true))) {
-            System.out.println("You will be writing into the garage file. The format to enter a new car is Make Model MPG");
+            System.out.println("You will be writing into the garage text file\n. The format to enter a new car is Make Model MPG.\n");
             System.out.println("If a car is more than one word, please attach them with a dash");
 
             while(!flag){

@@ -50,25 +50,39 @@ public class Main extends Algorithm {
 
             choice = scann.nextInt();
             switch (choice) {
+                /*
+                 * Case 1 will open the file
+                 * read the text to the garage linked list
+                 * sort the garage by ascending order
+                 * print to screen
+                 */
                 case 1:
                     System.out.println("Here is the content of the file: ");
+
                     try (FileInputStream fileInput = new FileInputStream(file)) {
-                        //scan = new Scanner(fileInput);
                         readText(garage, fileInput);
-                        //fileInput.close();
                         numSort(garage);
-                        System.out.println(garage.toString());
+                        for(Car car : garage){
+                            System.out.print(car);
+                        }
                     } catch (IOException e) {
                         System.out.println("Error reading file:" + e);
                     }
                     break;
-
+                    /*
+                     * Case 2 will open the file to write new cars
+                     */
                 case 2:
+                    
                     System.out.println("Opening the garage file");
                     writeGarage(garage, file);
                     break;
-
+                    /*
+                     * This will close the do while loop
+                     * this will close the program and return a thank you message
+                     */
                 case 3:
+
                     System.out.println("Thank you for using the program");
                     break;
 
@@ -76,18 +90,10 @@ public class Main extends Algorithm {
                     System.out.println("Invalid choice, please try again");
                     break;
             }
-            //scann.next();
-
         } while (choice != 3);
 
-        // Here we close what we have opened.
-        // fileInput.close();
-        //scan.close();
         scann.close();
-
-        // reread the file after writing new data
-
-        //numSort(garage);
+        
 
     }
 
