@@ -14,8 +14,6 @@ public class Main extends Algorithm {
          * This is the information of the file that is located in the folder.
          */
         File file = new File("C:\\Users\\bryan\\git-repo\\CSC372\\MOD_8\\CarList.txt"); // file path
-        Scanner scan = null; // Scanner to grab all information from file
-
         // This is where all the cars will be stored, a linkedlist of cars named garage
         LinkedList<Car> garage = new LinkedList<Car>();
 
@@ -62,6 +60,7 @@ public class Main extends Algorithm {
                     try (FileInputStream fileInput = new FileInputStream(file)) {
                         readText(garage, fileInput);
                         numSort(garage);
+                        // Best for loop for best results
                         for(Car car : garage){
                             System.out.print(car);
                         }
