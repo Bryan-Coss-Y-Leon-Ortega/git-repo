@@ -21,6 +21,7 @@ public class Main{
      * the double product will be the product of all the numbers input by the user. 
      */
     private static double productFive(Scanner scan, int INPUTS, double product) {
+        // base case, if there is a zero in the inputs, it will immediately return a zero, no exceptions.  
         if (INPUTS ==0){
             return product;
         }else{
