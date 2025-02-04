@@ -61,25 +61,25 @@ public class Main extends Algorithm {
                         readText(garage, fileInput);
                         numSort(garage);
                         // Best for loop for best results
-                        for(Car car : garage){
+                        for (Car car : garage) {
                             System.out.print(car);
                         }
                     } catch (IOException e) {
                         System.out.println("Error reading file:" + e);
                     }
                     break;
-                    /*
-                     * Case 2 will open the file to write new cars
-                     */
+                /*
+                 * Case 2 will open the file to write new cars
+                 */
                 case 2:
-                    
+
                     System.out.println("Opening the garage file");
                     writeGarage(garage, file);
                     break;
-                    /*
-                     * This will close the do while loop
-                     * this will close the program and return a thank you message
-                     */
+                /*
+                 * This will close the do while loop
+                 * this will close the program and return a thank you message
+                 */
                 case 3:
 
                     System.out.println("Thank you for using the program");
@@ -92,8 +92,6 @@ public class Main extends Algorithm {
         } while (choice != 3);
 
         scann.close();
-        
-
     }
 
 }
