@@ -6,12 +6,15 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.Writer;
 import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Algorithm extends Car {
+
+    /*
+     * numSort will sort the mpg of each car into ascending order.
+     * 
+     */
 
     public static void numSort(LinkedList<Car> Garage) {
 
@@ -37,19 +40,24 @@ public class Algorithm extends Car {
      */
     public static void readText(LinkedList<Car> garage, FileInputStream fileInput) throws FileNotFoundException{
 
-        String line;
-        String[] words;
-        String make;
-        String model;
-        double mpg;
 
         try (Scanner scan = new Scanner(fileInput)){
             while (scan.hasNextLine()) {
 
-                line = scan.nextLine().trim(); //grabs the next line and removes any extra blank space
-                words = line.split("\s+"); // Splits the line into 3 different words 
-                make = words[0];
-                model = words[1];  
+                String line = scan.nextLine().trim(); //grabs the next line and removes any extra blank space
+                //Check for empty lines in the text document to skip
+                if(line.isEmpty()){
+                    continue;
+                }
+                //Skips the lines that are not in proper formatting. 
+                String[] words = line.split("\\s+"); // Splits the line into 3 different words 
+                if(words.length < 3){
+                    System.out.println("Skipped line not in proper Make Model MPG format" + line);
+                }
+
+                String make = words[0];
+                String model = words[1];  
+                double mpg;
 
                 try{
                     mpg = Double.parseDouble(words[2]);
@@ -58,23 +66,19 @@ public class Algorithm extends Car {
                         garage.add(car);
                     }else{
                         //this will return an error if there is a negative MPG in the car
-                        System.out.println(make + " " + model + " has a negative or Zero MPG of: " + mpg + "\nThis car will be removed from the garage list"); 
+                        System.out.println("Skipping car with the invalid MPG:" + line); 
                     }
                 } catch (NumberFormatException e){
-                    System.out.println("Invalid MPG value for: " + e);
+                    System.out.println("Invalid MPG value for: " + line);
                 } 
             } 
         }
     }
-    //This is a program the will read the existing list of the garage and return all the values. 
-    public static void readList(LinkedList<Car> garage) {
-        
-        for(Car car: garage){
-            System.out.println(car.toString());
-        }
-    }
 
-
+    /*
+     * writeGarage will give the user the ability to write a new car into the text document. 
+     * 
+     */
     public static void writeGarage(LinkedList<Car> garage, File file) throws IOException{
 
         String make = "";
@@ -82,38 +86,37 @@ public class Algorithm extends Car {
         Double mpg = 0.00;
         boolean flag = false;
         Scanner scan = new Scanner(System.in);
+
         try (BufferedWriter output = new BufferedWriter(new FileWriter(file, true))) {
             System.out.println("You will be writing into the garage file. The format to enter a new car is Make Model MPG");
             System.out.println("If a car is more than one word, please attach them with a dash");
 
-            while(flag == false){
+            while(!flag){
                 flag = true;
                 try{
                     System.out.println("Please enter the Make of the vehicle: ");
-                    make = scan.nextLine();
+                    make = scan.nextLine().trim();
                     
                     System.out.println("Please enter the Model of the vehicle: ");
-                    model = scan.nextLine();
+                    model = scan.nextLine().trim();
                     
                     System.out.println("Please enter the MPG of the vehicle: ");
                     mpg = scan.nextDouble();
+                    //scan.nextLine();
+                    continue;
                     
-   
                 }catch(Exception e){
                     System.out.println(e.getMessage());
                     System.out.println("Error with the input formatting");
                     scan.nextLine();
                     flag = false;
+                    continue;
                 }
-                
             }
             System.out.println("Saving: "+ make + " " + model + " " + mpg);
             output.append(make + " " + model + " " + mpg + "\n");
             output.flush();
+            
         }
-
-        scan.close();
     }
-
-
 }
