@@ -11,13 +11,13 @@
 using namespace std;
 
 int main() {
-	string firstName = "Bryan";
-	string lastName = "Leon";
-	string addy = "904 N 111th Dr.";
-	string city = "Avondale";
+	std::string firstName = "Bryan";
+	std::string lastName = "Leon";
+	std::string addy = "904 N 111th Dr.";
+	std::string city = "Avondale";
 	int zip = 85323;
 
-	cout << "Hello, my name is " << firstName << " " << lastName <<endl;
-	cout << "I am allegedly located at " << addy + " " << city + " " << zip <<endl;
+	std::cout << "Hello, my name is " << firstName << " " << lastName <<endl;
+	std::cout << "I am allegedly located at " << addy + " " << city + ", " << zip << endl;
 	return 0;
 }
