@@ -15,9 +15,7 @@ public class Car {
         this.make = make;
         this.model = model;
         this.mpg = mpg;
-
     }
-
     /*
      * These are created if they are needed, so far, they have not been needed for anything
      * 

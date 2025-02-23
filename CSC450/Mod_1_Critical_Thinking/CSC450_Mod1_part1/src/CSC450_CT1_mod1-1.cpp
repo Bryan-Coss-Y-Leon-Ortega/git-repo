@@ -20,5 +20,5 @@ int main()
      // Wait For Output Screen
 
      //Main Function return Statement
-
+     return 0;
 }
