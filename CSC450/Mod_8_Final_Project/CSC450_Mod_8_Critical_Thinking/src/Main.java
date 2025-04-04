@@ -14,7 +14,7 @@ public class Main extends Thread{
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		//Initialize
+		//Initialize 
 		countUp start = new countUp();
 		countDown end = new countDown();
 		
