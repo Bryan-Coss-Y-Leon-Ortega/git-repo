@@ -34,7 +34,11 @@ public class Main {
 		bag2.add(30);
 		bag2.add(2.001);
 		bag2.add("Liam");
+		bag2.add("Gael");
+		bag2.add("Bryan");
 		bag2.add("Gael");	
+		bag2.add("Giovanni");
+		bag2.add("Gael");		
 		
 		// Print the contents of each bag
 		System.out.println("bagList size: " + bagList.size());
