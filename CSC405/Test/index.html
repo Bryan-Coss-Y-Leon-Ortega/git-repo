@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Rotating Shape Controls</title>
+  <script src="MV.js"></script>           <!-- Required for vec2() and flatten() -->
+  <script src="initShaders.js"></script>  <!-- Required for initShaders() -->
+  <script src="main.js" defer></script>    <!-- Your script -->
+  <style>
+    canvas { border: 1px solid black; display: block; margin-bottom: 10px; }
+    select, button { font-size: 16px; margin: 5px; }
+  </style>
+</head>
+<body>
+  <canvas id="gl-canvas" width="512" height="512"></canvas>
+
+  <button id="Direction">Toggle Direction</button>
+
+  <select id="Controls" size="3">
+    <option>Toggle Direction</option>
+    <option>Speed Up</option>
+    <option>Slow Down</option>
+  </select>
+
+  <!-- Vertex Shader -->
+  <script id="vertex-shader" type="x-shader/x-vertex">
+    attribute vec2 aPosition;
+    uniform float uTheta;
+    void main() {
+      float s = sin(uTheta);
+      float c = cos(uTheta);
+      mat2 rotation = mat2(c, -s, s, c);
+      gl_Position = vec4(rotation * aPosition, 0.0, 1.0);
+    }
+  </script>
+
+  <!-- Fragment Shader -->
+  <script id="fragment-shader" type="x-shader/x-fragment">
+    precision mediump float;
+    void main() {
+      gl_FragColor = vec4(0.0, 0.5, 1.0, 1.0); // Light blue
+    }
+  </script>
+</body>
+</html>
