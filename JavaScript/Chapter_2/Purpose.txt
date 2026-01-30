@@ -1,0 +1,129 @@
+This chapter will focus on variables and operators
+Though I am familiar with these functions, learing in JS will help me in the future for the tech job I am looking for.
+
+Declaring Variables:
+Variables need to be declared to begin using: let, var, const
+
+Let, Var, Const
+    let & var are used for variables that mat have new values assigned to them latter
+    let: global scope
+    var: block scope ({ in here })
+    const: Constant and unchanging value
+
+
+Let:
+    global scope
+    let firstname = "Monserrat";
+        firstname = "Maria";
+    
+    Once a variable is declared, the variable can have it's value reassigned. 
+
+Var:
+    block scope
+    var firstname = "Maria";
+        firstname = "Duck";
+
+Const:
+    Constant value
+    const PI = 3.14;
+    const PI = 3.141; // this will result in an error
+
+Primitive Types, 7
+String, Number, BigInt, Boolean, Symbol, undefined, and Null
+
+String: 
+    let doubleString = "Hello";
+    let singleString = 'Hi there';
+    let message = `This is also valid ${singleString}`
+    Allows to use escape character \' so compiler does not get confused/
+    \n in a string allows for a new line in the console
+
+Number:
+    let intNr = 1;
+    let decNr = 1.5;
+    let expNr = 1.4e15;
+    let octNr = 0o10;   //decimal 8
+    let hexNr = 0X3E8;  //decimal 1000
+    let binNr = 0b101;  //decimal 5
+
+BigInt:
+    ** recognized by postfix n
+    let bigNr = 90071992547409920n
+    cannot be explicitly converted with regular numbers, BigInt's only
+
+Boolean:
+    True and False operations
+    let bool1 = true;
+    let bool2 = false;
+
+Symbols:
+    Used to differentiate variables even if their values and types are the same
+    
+    let str1 = "JavaScript is fun!";
+    let str2 = "JavaScript is fun!";
+    console.log("These two strings are the same:", str1 === str2);
+    output:
+        These two strings are the same: true
+
+    let sym1 = Symbol("JavaScript is fun!");
+    let sym2 = Symbol("JavaScript is fun!");
+    console.log("These two strings are the same:", sym1 === sym2);
+    output:
+        These two strings are the same: false
+
+Undefined:
+    Variables that have not been given a value.
+        let unassigned;
+        console.log(unassigned);
+        output:
+            Undefined
+
+Null:
+    Empty or unknown value
+    let empty = null;
+
+
+
+Examples: 
+let str = "Hello";
+let nr = 7;
+let bigNr = 12345678901234n;
+let bool = true;
+let sym = Symbol("unique");
+let undef = undefined;
+let unknown = null;
+ 
+console.log("str", typeof str);
+console.log("nr", typeof nr);
+console.log("bigNr", typeof bigNr);
+console.log("bool", typeof bool);
+console.log("sym", typeof sym);
+console.log("undef", typeof undef);
+console.log("unknown", typeof unknown);
+
+
+Converting Data Types
+    Sometimes done automatically
+    let nr1 = 2;
+    let nr2 = 2;
+    console.log(nr1 * nr2); // Will convert the string to a number and then the solve
+        output: 4
+    console.log(nr1 + nr2); // Will convert the number to a string and concatenate it to the other string. 
+        output: 22
+String(), Number(), Data(), and Boolena()
+let nrToStr = 6;
+nrToStr = String(nrToStr);
+console.log(nrToStr, typeof nrToStr);
+    6 string
+let strToNr = "12";
+strToNr = Number(strToNr);
+console.log(strToNr, typeof strToNr);
+    12 number
+let strToBool = "any string will return true";
+strToBool = Boolean(strToBool);
+console.log(strToBool, typeof strToBool);
+    true Boolean
+
+** Empty strings and nulls will return 0
+** non-numbered strings will return as a NaN (not a number)
+** Empty strings to boolean will return a false, all strings return as true

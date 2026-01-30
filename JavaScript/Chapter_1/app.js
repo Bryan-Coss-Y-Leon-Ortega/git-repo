@@ -11,6 +11,9 @@ Purpose:
 
 console.log("Hello from the app.js file");
 let a = 10; //variable a is 10
+
+//Variable a is set to 10, 
+//Console will call it behind the inspect-console page on the web browser
 console.log(a);
 
 // this is a comment
