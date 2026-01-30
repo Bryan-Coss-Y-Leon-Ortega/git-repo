@@ -1,0 +1,43 @@
+ATM_Startup(){
+
+    if (Card == true)
+        return a message asking for pin
+
+    read pin from user
+    send information to the bank database
+}
+Verify_Pin(){
+
+    read card information
+    read the pin 
+    cross reference with the bank database
+    request profile from bank if data can be confirmed
+    return error message if pin is incorrect
+}
+Error(){
+    card information and pin do not match, 
+    A message is returned to the customer 
+    and the failed attempt is noted. 
+}
+
+Profile_Request(){
+
+    Sends request to bank to send all account information
+    returns true
+
+}
+Profile_Verified(){
+    account is verified and information is sent to the user
+}
+Menu(){
+    Menu will return the balances of each account
+    Menu will give user options on actions they are allowed to do 
+    View current amounts, deposits money, withdrawal money
+        Deposits and withdrawals amounts are sent to Update()
+    End the session   
+}
+Update(){
+    Takes the amount withdrawn and deposited and updates the balance. 
+    Will make the user verify pin again
+    else the session will end
+}

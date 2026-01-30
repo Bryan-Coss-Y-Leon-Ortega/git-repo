@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>WebGL Cube</title>
+    <style>
+    </style>
+</head>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+#version 300 es
+
+in vec4 aPosition;
+in vec3 aNormal;
+in vec4 aColor;
+
+out vec3 vNormal;
+out vec3 vPosition;
+out vec4 vColor;
+
+uniform mat4 uModelViewMatrix;
+uniform mat4 uProjectionMatrix;
+uniform mat3 uNormalMatrix;
+
+
+void
+main()
+{
+    vPosition = (uModelViewMatrix * aPosition).xyz;
+    vNormal = normalize(uNormalMatrix * aNormal);
+    vColor = aColor;  // pass color through
+
+    gl_Position = uProjectionMatrix * uModelViewMatrix * aPosition;
+    
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+#version 300 es
+
+precision mediump float;
+in vec3 vNormal;
+in vec3 vPosition;
+in vec4 vColor;
+
+out vec4 fColor;
+
+uniform vec4 uAmbientProduct;
+uniform vec4 uDiffuseProduct;
+uniform vec4 uSpecularProduct;
+uniform vec4 uLightPosition;
+uniform float uShininess;
+
+void
+main()
+{
+    vec3 N = normalize(vNormal);
+    vec3 L = normalize((uLightPosition.xyz));
+    vec3 E = normalize(-vPosition);
+    vec3 H = normalize(L + E);
+
+    vec4 ambient = uAmbientProduct;
+    float Kd = max(dot(L, N), 0.0);
+    vec4 diffuse = Kd * uDiffuseProduct * vColor;
+    float Ks = pow(max(dot(N, H), 0.0), uShininess);
+    vec4 specular = Ks * uSpecularProduct;
+
+    if(dot(L, N) < 0.0) specular = vec4(0.0, 0.0, 0.0, 1.0);
+
+    fColor = ambient + diffuse + specular;
+    fColor.a = 1.0;
+}
+</script>
+<center>
+
+<p> </p>
+<div>
+<button id = "thetaPlus">Increase theta</button>
+<button id = "phiPlus">Increase phi</button>
+<button id = "incSub">Increase Subdivisions</button>
+</div>
+<br>
+<button id = "thetaMinus">Decrease theta</button>
+<button id = "phiMinus">Decrease phi</button>
+<button id = "decSub">Decrease Subdivisions</button>
+<br></br>
+<button id = "WiredCube">Wired Cube </button>
+<button id = "SolidCube"> Solid Cube </button>
+<br></br>
+<button id ="xAxis">X-Axis</button>
+<button id ="yAxis">Y-Axis</button>
+<button id ="zAxis">Z-Axis</button>
+<button id ="rotate">Rotate</button>
+<p> </p>
+
+
+
+
+<script type="text/javascript" src="initShaders.js"></script>
+<script type="text/javascript" src="MV.js"></script>
+<script type="text/javascript" src="cubeWired.js"></script>
+
+<body>
+<canvas id="gl-canvas" width="1000" height="1000">
+</canvas>
+</body>
+</center>
+
+</html>

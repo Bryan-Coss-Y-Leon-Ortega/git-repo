@@ -1,0 +1,68 @@
+public class Vehicle(){
+    String VehicleID;
+    String Make;
+
+    public Vehicle(Vehicle, Make){
+        this.VehicleID = VehicleID;
+        this.Make = Make;
+    }
+
+    print(){
+        System.out.println(VehicleID + Make);
+    }
+}
+
+//Inherits Vehicle
+public class Car()extends Vehicle{
+    String Model;
+    String Mileage;
+    int CarID;
+    public class Car(Model, Mileage, CarID){
+        this.Model = Model;
+        this.Mileage = Mileage;
+        this.CarID = CarID;
+    }
+    print()
+        System.out.println(VehicleID + CarID + Make + Model + Mileage)
+} 
+
+Inherits Vehicle
+public class car()extends Vehicle{
+    
+    int DoorNums;
+    int MPG;
+    public class Truck(DoorNums, MPG){
+        this.DoorNums = DoorNums;
+        this.MPG = MPG;
+    }
+    print(){
+        System.out.println(VehicleID + Make + DoorNums + MPG)
+    } 
+}
+
+public class Driver(){
+    int driverID;
+    String name;
+
+    public Driver(driverID, name){
+        this.driverID = driverID;
+        this.name = name;
+    }
+    print(){
+        System.out.println(driverID + Name)
+    }
+}
+
+public class CarDriver{
+    Car car;
+    Driver driver;
+    public CarDriver(Car car, Driver driver){
+        this.car = car;
+        this.driver = driver;
+    }
+    print(){
+        System.out.println(driver.driverID + car.carID)
+        Driver.print();
+        Car.print();
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>WebGL Sphere</title>
+    <style>
+    </style>
+</head>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+#version 300 es
+
+in vec4 aPosition;
+
+uniform mat4 uModelViewMatrix;
+uniform mat4 uProjectionMatrix;
+
+
+void
+main()
+{
+    gl_Position = uProjectionMatrix * uModelViewMatrix * aPosition;
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+#version 300 es
+
+precision mediump float;
+
+out vec4 fColor;
+
+void
+main()
+{
+    // Color of the sphere
+    fColor = vec4(0.2, 0.0, 0.0, 1.0);
+}
+</script>
+<center>
+
+<p> </p>
+<button id = "thetaPlus">Increase theta</button>
+<button id = "thetaMinus">Decrease theta</button>
+<button id = "phiPlus">Increase phi</button>
+<button id = "phiMinus">Decrease phi</button>
+<p> </p>
+<button id = "incSub">Increase Subdivisions</button>
+<button id = "decSub">Decrease Subdivisions</button>
+
+
+
+<script type="text/javascript" src="initShaders.js"></script>
+<script type="text/javascript" src="MV.js"></script>
+<script type="text/javascript" src="sphere.js"></script>
+
+<body>
+<canvas id="gl-canvas" width="800" height="800">
+</canvas>
+</body>
+</center>
+
+</html>

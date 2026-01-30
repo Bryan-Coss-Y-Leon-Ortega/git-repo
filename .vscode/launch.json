@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "main.Main",
+            "projectName": "CSC400_Mod_1_Critical_Thinking"
+        },
+        {
+            "type": "java",
+            "name": "Map_practice",
+            "request": "launch",
+            "mainClass": "Map_practice",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "CSC372.MOD_8.Main",
             "projectName": "git-repo_4bc425"
         },
