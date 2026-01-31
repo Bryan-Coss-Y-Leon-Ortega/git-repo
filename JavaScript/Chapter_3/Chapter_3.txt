@@ -49,3 +49,23 @@ Adding into an array:
 Arrays allow the user to add into any place of the index, even if not explicitly stated.
 For example, in an array of 3, it is allowed to write into position of 5 or 6,
     it will return <# empty items> at print out. 
+-> Adding elements requires list.push(Item)
+    Values added at the end of the array
+-> Splice will add at specific values. 
+    list.splice(#of items, #of how many to delete after, Items, .....);
+        Seconds one will delete to the end, no matter the amount placed
+->Concat
+    Will add elements to the end
+    list1 = [1, 2, 3]
+    list2 = [4, 5, 6]
+    list3 = list1.concat(list2)
+    list3=[1, 2, 3, 4, 5, 6]
+
+Deleting from array
+    pop() will delete from end of array
+    shift() will delete from beginning of array
+    splice(...,...), parameters of where to start deleting and how many to delete
+    delete list[##] will delete the item at the array and then leave as undefined. 
+
+
+======== Last page is at 81, 56 in textbook ==================
