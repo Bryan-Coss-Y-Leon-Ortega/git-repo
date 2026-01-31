@@ -1,0 +1,51 @@
+Chapter 3 will be the focus on multiple values,
+This will include simple data structures like numbers and strings, but also other methods
+    Array and thier properties
+    Array methods
+    Multidimensional Arrays
+    Objects in JavaScriptWorking with objects and Arrays
+
+
+Arrays and their properties
+    Arrays are lists of values
+    can be of all data types
+    One array can contain multiple different data types
+
+Creating Arrays
+    arr1 = ["black", "White", "Yellow"]
+
+Const array:
+    Can change the value of the array, but not the value of the array itself.
+        const arr = ["hi there"];
+        arr[0] = "new value";
+        console.log(arr[0]);
+ 
+        arr = ["nope, now you are overwriting the array"]
+
+        New value
+        TypeError: Assignment to constant variable.
+
+Accessing Elements:
+    cars = ["Toyota", "Volkswagon", "Chevy"];
+    console.log(cars[0]);
+
+Overwriting Elements:
+    cars[0] = "Tesla";
+    console.log(cars[0])
+
+    Tesla
+
+Arrays have a built in length property:
+
+colors = ["black", "orange", "pink"]
+booleans = [true, false, false, true];
+emptyArray = [];
+
+console.log("Length of colors:", colors.length);
+console.log("Length of booleans:", booleans.length);
+console.log("Length of empty array:", emptyArray.length);
+
+Adding into an array:
+Arrays allow the user to add into any place of the index, even if not explicitly stated.
+For example, in an array of 3, it is allowed to write into position of 5 or 6,
+    it will return <# empty items> at print out. 

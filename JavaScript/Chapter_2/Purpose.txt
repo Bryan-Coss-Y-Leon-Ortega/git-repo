@@ -127,3 +127,33 @@ console.log(strToBool, typeof strToBool);
 ** Empty strings and nulls will return 0
 ** non-numbered strings will return as a NaN (not a number)
 ** Empty strings to boolean will return a false, all strings return as true
+
+Operators
+
+Addition
+    Arithemtic or concatenate
+
+Exponential
+ let nr1 = 12
+ let nr2 = 2
+ let resultant = nr1 ** nr2
+    output: 144
+
+Modulus
+let nr1 = 10;
+let nr2 = 3;
+let result1 = nr1 % nr2;
+console.log(`${nr1} % ${nr2} = ${result1}`);
+    10 % 3 = 1
+
+let nr3 = 8;
+let nr4 = 2;
+let result2 = nr3 % nr4;
+console.log(`${nr3} % ${nr4} = ${result2}`);
+8 % 2 = 0
+
+let nr5 = 15;
+let nr6 = 4;
+let result3 = nr5 % nr6;
+console.log(`${nr5} % ${nr6} = ${result3}`);
+15 % 4 = 3
