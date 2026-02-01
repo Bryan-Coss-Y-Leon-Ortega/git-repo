@@ -1,0 +1,8 @@
+Purpose:
+Chapter 4 will be Logic Statements. 
+    if and if else statements
+    else if statements
+    Conditional ternary operators
+    switch statements
+
+This will focus on the JavaScript logic, This is a skill learned in Java
