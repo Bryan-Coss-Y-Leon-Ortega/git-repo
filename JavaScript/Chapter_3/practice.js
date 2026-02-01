@@ -42,6 +42,7 @@ let arrVal1 = [1,2,3];
 let arrVal2 = [4,5,6];
 let arrVal3 = [7,8,9];
 let arrOfArrays = [arrVal1, arrVal2, arrVal3];
+//this will add 0 to the begining of the array without deleting any other values.
 arrVal1.splice(0,0,0)
 
 console.log(arrOfArrays);
