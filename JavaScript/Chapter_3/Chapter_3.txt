@@ -67,5 +67,47 @@ Deleting from array
     splice(...,...), parameters of where to start deleting and how many to delete
     delete list[##] will delete the item at the array and then leave as undefined. 
 
+Finding Methods
+    Check whether a value is present in an array
+    arr8 = [ 2, 6, 7, 8 ];
+    let findValue = arr8.find(function(e) { return e === 6});
+    let findValue2 = arr8.find(e => e === 10);
+    console.log(findValue, findValue2);
+    Will return the correct value if found, -1 if value is not in array
 
-======== Last page is at 81, 56 in textbook ==================
+    indexof() is to locate the position of the value. 
+    arr8 = [ 2, 6, 7, 8 ];
+    let findIndex = arr8.indexOf(6);
+    let findIndex2 = arr8.indexOf(10);
+    console.log(findIndex, findIndex2);
+        
+Sorting
+    .sort() 
+        -> Sort numbers from small to high
+        -> Sort strings from A - Z
+    
+Reversing
+    .reverse()
+        ->Reverses the order of the array without sorting the array.
+
+Multidimensional Arrays
+    Arrays of Arrays!!!
+    let arrVal1 = [1,2,3];
+    let arrVal2 = [4,5,6];
+    let arrVal3 = [7,8,9];
+
+    let arrOfArrays = [arrVal1, arrVal2, arrVal3];
+    let arrOfArraysOfArrays = [arrOfArrays, arrOfArrays, arrOfArrays];
+
+Objects in JavaScript
+    Have propeties and can perform actions and methods. 
+    Let dog = { dogName: "Bryan",
+                weight: 2.14,
+                color: "Brown",
+                biter: True,
+            }    
+    variables can be called by ["nameOfVariable"] or .nameOfVariable
+    values can be changed by explicitly changing them, from string to Int, etc.    
+
+Objects in Objects
+    let dog {items: values  {items: values} };
