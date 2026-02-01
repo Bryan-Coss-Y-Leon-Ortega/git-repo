@@ -110,4 +110,13 @@ Objects in JavaScript
     values can be changed by explicitly changing them, from string to Int, etc.    
 
 Objects in Objects
-    let dog {items: values  {items: values} };
+    let dog = {items: values,  {items: values} };
+
+Arrays in Objects
+    let company = {item: value, array:[item1, item2, item3], item: value};
+
+Objects in arrOfArrays
+    let farm = [{animal: name, animal: name},{equipment: name, worker: name}]
+
+objects in Array in Objects
+    let club ={club1: name, drinks: [ shots: {drink1: tequila }] }
