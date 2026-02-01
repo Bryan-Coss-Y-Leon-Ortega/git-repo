@@ -42,8 +42,10 @@ let arrVal1 = [1,2,3];
 let arrVal2 = [4,5,6];
 let arrVal3 = [7,8,9];
 let arrOfArrays = [arrVal1, arrVal2, arrVal3];
+arrVal1.splice(0,0,0)
 
 console.log(arrOfArrays);
+console.log("This is splice added to the beginning",arrVal1)
 
 let dog = {
     dogName: "Bryan",
@@ -117,8 +119,20 @@ let farm = [
 console.log(farm[0].animal1, farm[1].equip3);
 
 //This will be the object in Array in Objects
-alert("Hello Barbie!")
 let club = {
     club1: "Club Penguin",
-    nightClub:[]
+    nightClub:["Santa Fe", "Charlies", "Downtown", 
+        {
+        name1: "Street",
+        name2: "Butterfly",
+        street: "Grove Street"
+        }
+            ],  
+    club3: "Wizard School"
 };
+//This will return the objects, it will also show the array
+console.log(club)
+//This will call the array and return all the values in the array
+console.log(club.nightClub[3])
+//this will return the value of the object in the array
+console.log(club.nightClub[3].street)
