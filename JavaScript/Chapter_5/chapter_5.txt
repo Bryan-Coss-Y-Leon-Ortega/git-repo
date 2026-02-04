@@ -1,0 +1,12 @@
+In this chapter, there are discussions of loops and their uses, but because I am familiar with theses loops from java, 
+    I will focus on what I do not know
+
+For of loop
+    This loop will iterate over the elements of an array
+    let arr = [some array];
+    for(let variableName of arr){
+        //code that will be executed that will go through the array
+        //variableName will be updated everytime
+        //all values of array will be variableName once
+        
+    }
