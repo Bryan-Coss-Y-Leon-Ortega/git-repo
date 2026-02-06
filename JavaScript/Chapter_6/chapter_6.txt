@@ -1,0 +1,64 @@
+This chapter will focus on functions and how to use them
+
+Invoking functions:
+    nameOfTheFunction();
+    functionThatTakesInput("input", 5);
+
+Functions can contain variables, this is how we take inputs.
+
+Variables can also take contain functions:
+    Look at the example below, this will allow us to rename a function 
+    This will be helpful creating methods and changing names to make sense. 3
+
+let varContainingFunctions = function(){
+    let varInFunction = "I am in the function.";
+    console.log("Hello from within the function", varInFunction);
+}
+
+varContainingFunctions();
+
+Javascript is more forgiving in functions and calling them. 
+
+Arrow Functions 
+    Shorthand notation for writing and implementing an argument
+
+    function doingStuff(x){
+        console.log(x)
+    }
+    let DoingArrowStuff = x = console.log(x);
+
+Spread:
+    A way to put elements from an array into different operations 
+    Starts with ...array
+    let spread = ["so", "much", "fun"];
+    let message = ["JavaScript", "is", ...spread, "and", "very", "powerful"];
+        Returns: ['JavaScript', 'is', 'so', 'much', 'fun', 'and', 'very', 'powerful']
+
+Rest Parameter:
+    This will treat the function as an array, and ignore the 
+
+    function someFunction(param1, ...param2) {
+    console.log(param1, param2);
+    }
+    someFunction("hi", "there!", "How are you?");
+
+Return from a function
+    Similar to java, it needs a return statement and something to return
+    It does not have to be a specific type
+    addNumbers(para1, para2){
+        return para1+para2;
+    }
+
+Returning with arrow functions
+    This will be a multiline function using return
+
+    let addTwoNumbers = (x,y) => {
+        return x+y;
+    }
+
+Let vs. Var
+    let is local within that function {}, const works the same
+    var makes it function-scoped {} making the varibale available throughout the function
+
+Global Variables:
+    Variables declared outside any functions can be used within any functions

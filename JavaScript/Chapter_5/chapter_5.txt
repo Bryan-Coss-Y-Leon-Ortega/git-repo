@@ -8,5 +8,8 @@ For of loop
         //code that will be executed that will go through the array
         //variableName will be updated everytime
         //all values of array will be variableName once
-        
+
     }
+
+for in loop
+    This loop will print the all values within an object
