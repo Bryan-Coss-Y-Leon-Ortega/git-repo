@@ -1,0 +1,16 @@
+This chapter will focus on classes
+    Object oriented programming
+    Classes and objects
+    Classes
+    Inheritance
+    Prototypes
+
+Class:
+    Class names start with class className{ constructor(var1, var1,...)}
+    All the variables are in within the class names
+
+Constructors:
+    Special method that is used to initialize objects with class
+
+Methods:
+    We can include methods in our objects

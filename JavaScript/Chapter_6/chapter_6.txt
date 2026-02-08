@@ -62,3 +62,17 @@ Let vs. Var
 
 Global Variables:
     Variables declared outside any functions can be used within any functions
+
+Immediately invoked function expression
+    a way of expressing a function that involves immediately, anonymously and self-executing
+
+Recursive Functions
+    call the same function from inside the function
+
+Nested Functions
+    We can have functions within functions
+    This means there is a function that is declared and called inside a function
+        and only lives within the scope of that function.
+
+Anonymous Functions 
+    Functions without function name. 
