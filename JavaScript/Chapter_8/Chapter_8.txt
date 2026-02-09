@@ -6,3 +6,10 @@ This chapter will focus on built-in javascript methods
     Array
     Number
     
+Decoding and Encoding URI'S
+    uri is a uniform resource identifiers
+        An identifier of a certain resources
+    URL: uniform resource locator, locator and hold the information on how to access it (location).
+
+DecodeUri() and encodeUri()
+    ENcoding fixes the URI's to prevent spaces and other error causing errors.
