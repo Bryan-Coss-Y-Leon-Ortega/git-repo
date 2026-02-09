@@ -1,0 +1,8 @@
+This chapter will focus on built-in javascript methods
+    Global javascript methods
+    String
+    Math
+    Date
+    Array
+    Number
+    

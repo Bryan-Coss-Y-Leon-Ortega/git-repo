@@ -14,3 +14,20 @@ Constructors:
 
 Methods:
     We can include methods in our objects
+
+We can remove accessibility of our variables with # in front of the variables we want
+class person{
+    #firstName
+    #lastName
+    constructor(firstName, lastName){
+        this.#firstName = firstName;
+        this.#lastName = lastName;
+    }
+}
+we can also modify the constructors to ensure specific validation.
+
+Getter and Setters:
+    This falls under encapsulation. This gives the user permission to change things in the data class
+    while keeping variables encapsulated in the data. 
+
+Inheritance:

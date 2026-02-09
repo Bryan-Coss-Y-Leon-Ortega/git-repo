@@ -85,6 +85,9 @@ console.log(pichu.name, "is an", pichu.type, "type");
 pichu.type = "Fighting";
 console.log(pichu.type);
 
+/*
+    This will be an example of inheritance. 
+*/
 class godPokemons extends Pokemon{
     #color;
     #speed;
