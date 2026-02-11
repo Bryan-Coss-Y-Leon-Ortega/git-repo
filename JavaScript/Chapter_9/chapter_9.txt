@@ -4,4 +4,6 @@ To practice functioning it and making things, i will likely need w2 or some like
 
 BOM:
     May be known as window browser objects, the way for JS to communicate with the browser
-    
+
+DOM: 
+    A way of displaying the structure HTML document as a logical tree
