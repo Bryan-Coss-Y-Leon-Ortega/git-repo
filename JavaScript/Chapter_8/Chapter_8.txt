@@ -12,4 +12,11 @@ Decoding and Encoding URI'S
     URL: uniform resource locator, locator and hold the information on how to access it (location).
 
 DecodeUri() and encodeUri()
-    ENcoding fixes the URI's to prevent spaces and other error causing errors.
+    Encoding fixes the URI's to prevent spaces and other error causing errors.
+
+Parsing Numbers
+    Example of parsing strings into numbers
+
+Math and int methods. 
+    There are a lot of math and int methods that are similar to java. this is a good reference, but i already have good practice of it. 
+    

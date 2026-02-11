@@ -1,0 +1,7 @@
+Chapter 9 will be a a crash course on HTML. This is completely new to me so it will be fun practice.
+
+To practice functioning it and making things, i will likely need w2 or some like page open and learn as i go.
+
+BOM:
+    May be known as window browser objects, the way for JS to communicate with the browser
+    

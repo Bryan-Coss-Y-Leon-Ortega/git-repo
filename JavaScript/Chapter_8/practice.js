@@ -92,3 +92,4 @@ console.log("Day of the month:", currentDateTime.getDate());
 console.log("Month:", currentDateTime.getMonth());
 console.log("Year:", currentDateTime.getFullYear());
 console.log("Time:", currentDateTime.getTime());
+// There are options to set the dates and times
