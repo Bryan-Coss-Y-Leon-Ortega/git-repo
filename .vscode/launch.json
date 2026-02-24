@@ -8,6 +8,27 @@
             "type": "java",
             "name": "MycoolappApplication",
             "request": "launch",
+            "mainClass": "MycoolappApplication",
+            "projectName": "git-repo_4bc425"
+        },
+        {
+            "type": "java",
+            "name": "MycoolappApplication",
+            "request": "launch",
+            "mainClass": "src.main.java.com.bryan.springboot.deom.mycoolapp.MycoolappApplication",
+            "projectName": "git-repo_4bc425"
+        },
+        {
+            "type": "java",
+            "name": "MycoolappApplication",
+            "request": "launch",
+            "mainClass": "com.bryan.springboot.deom.mycoolapp.MycoolappApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "MycoolappApplication",
+            "request": "launch",
             "mainClass": "com.bryan.springboot.deom.mycoolapp.MycoolappApplication",
             "projectName": "mycoolapp"
         },
