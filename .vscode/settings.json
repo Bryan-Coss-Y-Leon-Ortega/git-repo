@@ -22,6 +22,7 @@
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
-        "Java/Springboot"
+        "Java_Project_Practices/Project_1",
+        "Java/Java_Projects/Calculator"
     ]
 }
